@@ -11,6 +11,10 @@ var section = window.location.pathname;
       $("#index").addClass("hide");
       $("#contact").removeClass("hide");
     }
+
+    $(function(){
+      $("#articles-loader").load("articles.html");
+    });
     // onclick of one of the navigation buttons
     $( "a[data-hide]" ).on( "click", function() {
       $(window).scrollTop(0);
