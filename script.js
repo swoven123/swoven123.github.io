@@ -47,18 +47,6 @@ var section = window.location.pathname;
         hljs.highlightBlock(block);
       });
     })
-    $('#send').on('click', function () {
-      var $btn = $(this).button('loading')
-      var name = $("#name").val();
-      var email = $("#email").val();
-      var subject = $("#subject").val();
-      var message = $("#message").val();
-      $.get( "http://timothy.expert/sendmail.php", { name: name, email: email, subject: subject, message: message } )
-        .done(function( data ) {
-          eval(data);
-        });
-      return false;
-    })
     $(window).on('beforeunload', function() {
       $(window).scrollTop(0);
     });
