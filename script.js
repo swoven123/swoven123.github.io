@@ -56,6 +56,6 @@ $(window).on('beforeunload', function () {
 });
 
 function showHide(hide, show) {
-  $(hide).hide();
-  $(show).show();
+  $("#hide").hide();
+  $("#show").show();
 }
