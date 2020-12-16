@@ -1,11 +1,11 @@
 var section = window.location.pathname;
-    if (section == "/blog") {
+    if (section == "/articles") {
       $("#index").addClass("hide");
-      $("#blog").removeClass("hide");
+      $("#articles").removeClass("hide");
     }
-    else if (section == "/projects") {
+    else if (section == "/consultation") {
       $("#index").addClass("hide");
-      $("#projects").removeClass("hide");
+      $("#consultation").removeClass("hide");
     }
     else if (section == "/contact") {
       $("#index").addClass("hide");
