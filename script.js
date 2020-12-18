@@ -56,9 +56,6 @@ $(window).on('beforeunload', function () {
 });
 
 function showHide(hide, show) {
-  console.log("Clicked");
-  console.log(hide);
-  console.log(show);
-  $("#" + hide).hide();
-  $("#" + show).show();
+  $("#articles-row").hide();
+  $("#yearly-horoscope").show();
 }
